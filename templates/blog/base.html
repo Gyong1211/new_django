@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WPS-5th Django study</title>
+</head>
+<body>
+    <h1>오늘은 즐거운 하루</h1>
+    {% for post in posts %}
+    <p>{{post.title}}</p>
+    <p>{{post.text}}</p>
+    <hr>
+    {% endfor %}
+</body>
+</html>

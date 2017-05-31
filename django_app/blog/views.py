@@ -1,11 +1,12 @@
 from django.shortcuts import render, HttpResponse
-
 # Create your views here.
-
+from blog.models import Post
 
 
 def main_view(request):
-    return HttpResponse('음 빨리 음 음...')
+    posts = Post.objects.all()
+    context = {
+        'posts':posts
+    }
+    return render(request,'blog/base.html',context=context)
 
-def main_view2(request):
-    return HttpResponse('아침을 안먹어서 배가 고프다....')
