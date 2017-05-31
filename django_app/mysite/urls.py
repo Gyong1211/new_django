@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.main_view,name='main_view'),
     url(r'^postadd/$', views.post_add_view,name='post_add_view'),
+    url(r'^(?P<pk>\d+)/modify/$', views.post_modify_view,name='post_modify_view'),
 ]
