@@ -19,5 +19,6 @@ from blog import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.main_view),
+    url(r'^$', views.main_view,name='main_view'),
+    url(r'^postadd/$', views.post_add_view,name='post_add_view'),
 ]
