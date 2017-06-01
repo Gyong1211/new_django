@@ -57,4 +57,4 @@ def post_modify_view(request,pk):
             context = {
                 'form':form,
             }
-            return render(request, 'post/post-add.html',context=context)
+            return render(request, 'post/post-modify.html',context=context)

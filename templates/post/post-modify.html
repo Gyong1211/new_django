@@ -8,6 +8,9 @@
             {{field}}
         {% endfor %}
         <button type="submit" class="btn btn-primary btn-lg btn-block">Modify Post</button>
+        {% if form.errors %}
+        {{ form.errors }}
+        {% endif %}
     </form>
 </div>
 {% endblock %}
